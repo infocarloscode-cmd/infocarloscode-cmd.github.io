@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carlos Gómez — Desarrollador Full-stack</title>
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Carlos Eduardo Gómez Rodríguez</h1>
+    <div class="title">Desarrollador Full-stack · React, Next.js, TypeScript · Productos reales en producción</div>
+    <div class="contact">
+      <span>Barcelona, Venezuela (UTC−4) · Remoto, cualquier horario</span>
+      <span><a href="mailto:info.carloscode@gmail.com">info.carloscode@gmail.com</a></span>
+      <span><a href="https://wa.me/584224552544">+58 422 455 2544</a></span>
+    </div>
+    <div class="contact">
+      <span><a href="https://www.linkedin.com/in/carlos-gomez-b41737421/">linkedin.com/in/carlos-gomez-b41737421</a></span>
+      <span><a href="https://github.com/infocarloscode-cmd">github.com/infocarloscode-cmd</a></span>
+    </div>
+  </header>
+
+  <h2>Perfil</h2>
+  <p class="summary">
+    Desarrollador full-stack que entrega productos completos y los mantiene funcionando. Diseñé, construí y mantengo
+    un sistema de punto de venta de escritorio (Tauri, Rust, React) que usan a diario dos comercios, y la app de delivery
+    conectada a él. Me encargo de todo el ciclo: modelo de datos, backend, interfaz, CI/CD, publicación de versiones y
+    soporte a usuarios reales. Uso herramientas de IA a diario para avanzar rápido, y respaldo esa velocidad con tests,
+    revisión de código y publicaciones cuidadosas.
+  </p>
+
+  <h2>Experiencia</h2>
+  <div class="job-head"><b>Fundador y Desarrollador Full-stack — Carloscode_</b><em>Mar 2026 – Actualidad</em></div>
+  <div class="job-sub">Estudio de software independiente · Remoto · Clientes en Venezuela</div>
+
+  <div class="proj">
+    <div class="proj-head">Kaxa — Sistema de punto de venta de escritorio <span>· Tauri 2, Rust, React, TypeScript, libSQL/Turso, GitHub Actions</span></div>
+    <ul>
+      <li>POS completo hecho desde cero: ventas, inventario, compras y facturas de proveedores, notas de crédito, cuadre de caja, reportes, usuarios y roles.</li>
+      <li>En producción diaria desde julio de 2026 en 2 comercios (supermercado y minimarket), con 6 dispositivos conectados. Ambos clientes llegaron por recomendación.</li>
+      <li>Funciona sin internet y sincroniza con la base de datos en la nube. 40 migraciones versionadas y tests en Rust de los flujos críticos (stock, notas de crédito).</li>
+      <li>Publicación automática con GitHub Actions: compila instaladores de 32 y 64 bits, los firma y publica la versión. Las cajas se actualizan solas.</li>
+      <li>4 ediciones con licencia a partir de un mismo código, más <i>Kaxa Lite</i>, una versión nativa en Rust que corre en equipos viejos con Windows 7 de 32 bits.</li>
+      <li>Corregí un error de datos en producción (falla de clave foránea en notas de crédito): primero lo reproduje con tests, luego lo arreglé y lo publiqué en todas las ediciones.</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="proj-head">Day Express Delivery — Pedidos en línea para supermercado <span>· Next.js, Prisma, PostgreSQL, Upstash Redis</span></div>
+    <ul>
+      <li>Tienda para clientes y panel para el personal. Unos 25 pedidos por semana y 72 clientes registrados.</li>
+      <li>Integrada con la caja Kaxa de la tienda: los pedidos en línea se sincronizan con el POS mediante una API propia.</li>
+      <li>Precios en USD que se recalculan con la tasa del día. Verificación de stock antes del pago, carga y aprobación de comprobantes, y chat en vivo.</li>
+      <li>Seguridad: cookies de sesión firmadas con HMAC-SHA256 y con vencimiento, para el personal y los clientes. Cuando la app pasó los límites de Vercel, la mudé a Render y reduje las consultas a la base de datos.</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="proj-head">ReArena — Plataforma de torneos de esports (cofundador, desarrollador principal) <span>· Next.js 16, React 19, Supabase, Tailwind</span></div>
+    <ul>
+      <li>Plataforma pensada para celular para torneos de VALORANT: cuentas, equipos, inscripciones, llaves de doble eliminación e integración con Discord.</li>
+      <li>Panel de administración con aprobaciones, auditoría, respaldos y papelera. Más de 250 commits y 50 archivos de tests (Node test runner).</li>
+      <li>HUD en vivo para OBS que lee el marcador del juego con OCR (Tesseract.js). Primer torneo público: noviembre de 2026.</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="proj-head">Otros proyectos para clientes <span>· React, Vite, Supabase, Firebase</span></div>
+    <ul>
+      <li>Tienda online con carrito, pedido por WhatsApp y un panel que la dueña usa por su cuenta.</li>
+      <li>Herramientas para streaming: un panel de producción para OBS con invitados remotos y un concurso de preguntas en tiempo real para transmisiones.</li>
+    </ul>
+  </div>
+
+  <h2>Habilidades</h2>
+  <div class="skills">
+    <b>Lenguajes</b><span>TypeScript, JavaScript, Rust, SQL, HTML, CSS</span>
+    <b>Frontend</b><span>React, Next.js (App Router, Server Components), Tailwind CSS, Vite</span>
+    <b>Backend y datos</b><span>Node.js, APIs REST, Prisma, PostgreSQL, SQLite/libSQL (Turso), Supabase, Firebase, Redis</span>
+    <b>Escritorio</b><span>Tauri 2 (Rust + interfaz web), actualizaciones automáticas, instaladores de Windows (NSIS)</span>
+    <b>DevOps y herramientas</b><span>Git, GitHub Actions, Vercel, Render, Cloudflare Pages, desarrollo asistido por IA (Claude Code)</span>
+  </div>
+
+  <div class="two">
+    <div>
+      <h2>Formación</h2>
+      <b>Full Stack Software Development</b> (320 h) — 4Geeks Academy, Caracas · oct. 2022<br>
+      <a class="muted" href="https://certificate.4geeks.com/3cb672dc45f5f5dfc214f0bdd6e7f0e6a074d060">Verificar certificado</a>
+    </div>
+    <div>
+      <h2>Idiomas</h2>
+      Español — nativo<br>
+      Inglés — intermedio (buena lectura y escritura)
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

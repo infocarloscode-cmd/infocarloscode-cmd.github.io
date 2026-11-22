@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Gómez · Full-stack developer</title>
+  <meta name="description" content="I'm Carlos, a full-stack developer from Venezuela. I build software that small businesses use every day. Looking for a full-time remote role.">
+  <meta property="og:title" content="Carlos Gómez · Full-stack developer">
+  <meta property="og:description" content="I build software that small businesses use every day. Looking for a full-time remote role.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="hire">
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Carloscode_ - top">carloscode<span class="cursor">_</span></a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="index.html" lang="es">Español</a>
+        <a href="#contact" class="btn btn--primary">Contact me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== PRESENTACIÓN ===== -->
+    <section class="hero hero--hire">
+      <div class="container">
+        <div class="hire-who reveal">
+          <!-- FOTO: guardar la foto como assets/img/carlos.jpg y aparece sola. Mientras no exista, se ven las iniciales. -->
+          <span class="avatar avatar--lg">CG<img src="assets/img/carlos.jpg" alt="Carlos Gómez" onerror="this.remove()"></span>
+          <div><strong>Carlos Gómez</strong>Full-stack developer · Venezuela</div>
+        </div>
+        <h1 class="reveal">I build software that small businesses <em>use every day</em>.</h1>
+        <p class="lead reveal">A supermarket in Venezuela runs its registers on a point-of-sale system I wrote, and its customers order groceries through an app I made. I work mostly with React, Next.js and TypeScript, and lately a fair amount of Rust. I'm looking for a full-time remote job on a team where I can keep learning.</p>
+        <div class="hero__actions reveal">
+          <a href="cv/Carlos-Gomez-Fullstack-Developer.pdf" class="btn btn--primary" download>Download my CV</a>
+          <a href="#" class="btn btn--ghost" data-linkedin>LinkedIn</a>
+          <a href="#" class="btn btn--ghost" data-github>GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section" id="work" style="padding-top: 1rem;">
+      <div class="container">
+        <span class="label reveal">work</span>
+        <h2 class="h2 reveal">What I've built</h2>
+
+        <div class="projects">
+
+          <!-- KAXA -->
+          <article class="project reveal">
+            <div class="project__visual project__visual--kaxa">
+              <div class="kaxa" aria-hidden="true">
+                <div class="kaxa__top"><span class="kaxa__badge">K</span><b>Kaxa</b><em>Register 01</em></div>
+                <div class="kaxa__main">
+                  <div class="kaxa__grid">
+                    <div class="kaxa__item"><i></i>Flour<span>$1.20</span></div>
+                    <div class="kaxa__item"><i></i>Rice<span>$1.05</span></div>
+                    <div class="kaxa__item"><i></i>Coffee<span>$4.50</span></div>
+                    <div class="kaxa__item"><i></i>Oil<span>$3.80</span></div>
+                    <div class="kaxa__item"><i></i>Milk<span>$1.90</span></div>
+                    <div class="kaxa__item"><i></i>Pasta<span>$0.95</span></div>
+                  </div>
+                  <div class="kaxa__ticket">
+                    <div class="kaxa__row"><span>2× Flour</span><span>2.40</span></div>
+                    <div class="kaxa__row"><span>1× Coffee</span><span>4.50</span></div>
+                    <div class="kaxa__row"><span>3× Pasta</span><span>2.85</span></div>
+                    <div class="kaxa__total"><span>Total</span><span>$9.75</span></div>
+                    <div class="kaxa__pay">Charge</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project__body">
+              <h3>Kaxa</h3>
+              <p class="project__type">Point-of-sale system · built alone · in use since July 2026</p>
+              <p class="project__desc">Day Express, a supermarket, needed a register that didn't stop selling every time the internet went down, and that handled prices in dollars with a rate that changes every day. I built it as a desktop app: React and TypeScript for the screens, Rust for stock and money. It works offline and syncs with the cloud. Today it runs on 6 devices in two stores.</p>
+              <p class="project__desc">The part I'm proudest of: one store has a Windows 7, 32-bit computer, so I made a lighter version in plain Rust that runs on it. Updates are built by GitHub Actions and the registers install them on their own.</p>
+              <p class="project__note">The code is private because it's a product I sell. Happy to walk you through it on a call.</p>
+              <p class="project__stack">Tauri · Rust · React · TypeScript · Turso · GitHub Actions</p>
+            </div>
+          </article>
+
+          <!-- DELIVERY -->
+          <article class="project reveal">
+            <div class="project__visual project__visual--delivery">
+              <div class="phone" aria-hidden="true">
+                <div class="phone__head"><img src="assets/img/dayexpress-logo.png" alt=""></div>
+                <div class="phone__rate">Today's rate updated</div>
+                <div class="phone__list">
+                  <div class="phone__item"><i></i><div><b>Flour 1kg</b><span>$1.20</span></div><em>+</em></div>
+                  <div class="phone__item"><i></i><div><b>Coffee 500g</b><span>$4.50</span></div><em>+</em></div>
+                  <div class="phone__item"><i></i><div><b>Milk 1L</b><span>$1.90</span></div><em>+</em></div>
+                </div>
+                <div class="phone__cta">View order · 3 items</div>
+              </div>
+            </div>
+            <div class="project__body">
+              <h3>Day Express Delivery</h3>
+              <p class="project__type">Online ordering app · built alone · in use since July 2026</p>
+              <p class="project__desc">The same store wanted to take orders online without paying a marketplace. Customers build their order, staff check what's really on the shelf, and only then the customer pays and uploads the receipt. Prices live in dollars, so the store only updates the exchange rate.</p>
+              <p class="project__desc">It gets around 25 orders a week from 72 registered customers. When it went over Vercel's free limits, I moved it to Render, made it lighter on the database, and switched logins to signed cookies.</p>
+              <p class="project__stack">Next.js · TypeScript · Prisma · PostgreSQL · Redis</p>
+            </div>
+          </article>
+
+          <!-- REARENA -->
+          <article class="project reveal">
+            <div class="project__visual shade">
+              <img class="cover" src="assets/img/rearena-hud.webp" alt="ReArena live scoreboard over a VALORANT broadcast" loading="lazy">
+              <img class="overlay-logo" src="assets/img/rearena-logo.svg" alt="ReArena">
+            </div>
+            <div class="project__body">
+              <h3>ReArena</h3>
+              <p class="project__type">Esports tournament platform · co-founder and developer</p>
+              <p class="project__desc">A platform for amateur VALORANT tournaments. I write the code and my co-founder does the design. Teams sign up, brackets run on their own, and the stream gets a live scoreboard.</p>
+              <p class="project__desc">The game has no API for the live score, so the overlay reads it from the screen with OCR. Double elimination has more edge cases than I expected, so that logic has 50 test files around it. Our first tournament is on November 23.</p>
+              <p class="project__stack">Next.js · React · TypeScript · Supabase · Tailwind</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="others reveal">I've also made an online store for an accessories brand, a control panel for a live podcast, a trivia game show for streams, and a website for an events company.</p>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section" id="about" style="background: var(--bg-2); border-block: 1px solid var(--line);">
+      <div class="container about">
+        <div>
+          <span class="label reveal">about</span>
+          <h2 class="h2 reveal">A bit about me</h2>
+          <p class="lead reveal" style="margin-top:1.4rem;">I studied at 4Geeks Academy in 2022 and since March 2026 I've been building software full time under my own name, Carloscode_. I also support the stores myself, so when something breaks at a register, I'm the one who gets the message.</p>
+          <p class="lead reveal">I use AI tools every day, mostly Claude Code, and I'd rather say it up front. They help me move fast, but I read every change, I test the parts that touch money, and I can explain any line of these projects.</p>
+        </div>
+        <div class="facts reveal">
+          <div class="fact"><div><b>Any time zone</b><span>I live in Venezuela (UTC−4) and can work US, LATAM or European hours.</span></div></div>
+          <div class="fact"><div><b>Employee or contractor</b><span>Open to a full-time role either way.</span></div></div>
+          <div class="fact"><div><b>Languages</b><span>Spanish is my first language. I read and write English comfortably and practice speaking it every day.</span></div></div>
+          <div class="fact"><div><b>Education</b><span>Full Stack Software Development, 4Geeks Academy, 2022. <a class="link" href="https://certificate.4geeks.com/3cb672dc45f5f5dfc214f0bdd6e7f0e6a074d060" target="_blank" rel="noopener">See certificate</a></span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact reveal">
+          <h2>Thanks for reading.</h2>
+          <p class="lead">If you think I could fit on your team, write me. I usually reply the same day.</p>
+          <div class="contact__actions">
+            <a href="#" class="btn btn--primary" data-email><span data-email-text>Email</span></a>
+            <a href="#" class="btn btn--ghost" data-whatsapp="Hi Carlos, I saw your page.">WhatsApp</a>
+          </div>
+          <div class="contact__links">
+            <a href="cv/Carlos-Gomez-Fullstack-Developer.pdf" download>CV in English</a>
+            <a href="cv/Carlos-Gomez-Desarrollador-Fullstack.pdf" download lang="es">CV en español</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span data-year></span> Carlos Gómez · <span class="mono">carloscode_</span></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Archivos privados: NUNCA se publican
+PLAN-*.md
+*.csv
+*.md
+!README.md
+.claude/

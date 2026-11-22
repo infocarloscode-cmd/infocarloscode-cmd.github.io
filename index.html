@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos Gómez · Carloscode_ | Desarrollo web y sistemas a medida</title>
+  <meta name="description" content="Carlos Gómez (Carloscode_): desarrollo de páginas web, tiendas online, sistemas de punto de venta, paneles y herramientas para streaming. Trabajo con clientes de cualquier país.">
+  <meta property="og:title" content="Carlos Gómez · Carloscode_">
+  <meta property="og:description" content="Páginas web, tiendas y sistemas a medida para hacer crecer tu negocio.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0A0A0C">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Carloscode_ - inicio">carloscode<span class="cursor">_</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="hire.html" lang="en">For companies (EN)</a>
+        <a href="#contacto" class="btn btn--primary">Hablemos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <span class="status reveal"><i></i>Disponible para nuevos proyectos · Clientes de cualquier país</span>
+          <h1 class="reveal">Webs y sistemas que <em>hacen crecer</em> tu negocio.</h1>
+          <p class="lead reveal">Diseño y desarrollo páginas web, tiendas online y software a medida: desde la idea hasta que está funcionando, y te acompaño después de entregarlo.</p>
+          <div class="hero__actions reveal">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="#" class="btn btn--ghost" data-whatsapp="Hola Carlos, vi tu portafolio y quiero cotizar un proyecto.">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+              Escríbeme por WhatsApp
+            </a>
+            <a href="#" class="btn btn--ghost" data-email>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              Enviar un correo
+            </a>
+          </div>
+          <div class="hero__who reveal">
+            <span class="avatar">CG<img src="assets/img/carlos.jpg" alt="Carlos Gómez" onerror="this.remove()"></span>
+            <div><strong>Carlos Gómez · Carloscode_</strong>Desarrollador web y de software</div>
+          </div>
+        </div>
+
+        <div class="terminal reveal" aria-hidden="true">
+          <div class="terminal__bar"><span></span><span></span><span></span><em>proyecto.js</em></div>
+          <div class="terminal__body" id="terminal"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FRANJA DE DATOS ===== -->
+    <div class="facts-strip">
+      <div class="container facts-strip__inner">
+        <div class="facts-strip__item"><b>Proyecto completo</b><span>Diseño, código y publicación</span></div>
+        <div class="facts-strip__item"><b>Software en producción</b><span>Usado a diario en comercios</span></div>
+        <div class="facts-strip__item"><b>100% remoto</b><span>Clientes de cualquier país</span></div>
+        <div class="facts-strip__item"><b>Soporte incluido</b><span>Te acompaño después de entregar</span></div>
+      </div>
+    </div>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <span class="label reveal">servicios</span>
+        <h2 class="h2 reveal">Lo que puedo construir <span class="accent">para ti</span></h2>
+        <div class="services reveal">
+          <article class="service">
+            <span class="service__n">01</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <h3>Páginas web y landings</h3>
+            <p>Sitios rápidos y modernos que presentan tu negocio y convierten visitas en clientes.</p>
+            <ul><li>Formularios de contacto</li><li>Botón directo a WhatsApp</li><li>Dominio y hosting</li></ul>
+          </article>
+          <article class="service">
+            <span class="service__n">02</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg>
+            <h3>Tiendas y catálogos</h3>
+            <p>Vende en línea con carrito, catálogo y pedidos que llegan directo a tu WhatsApp.</p>
+            <ul><li>Panel para cargar productos</li><li>Precios en divisas y tasa</li><li>Pedidos y comprobantes</li></ul>
+          </article>
+          <article class="service">
+            <span class="service__n">03</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            <h3>Sistemas a medida</h3>
+            <p>Software hecho para cómo trabaja tu negocio, no al revés.</p>
+            <ul><li>Punto de venta (POS)</li><li>Paneles administrativos</li><li>Apps de escritorio y web</li></ul>
+          </article>
+          <article class="service">
+            <span class="service__n">04</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            <h3>Streaming y eventos en vivo</h3>
+            <p>Herramientas para transmisiones que se ven profesionales y se controlan fácil.</p>
+            <ul><li>Paneles de control para OBS</li><li>Juegos y gráficos en vivo</li><li>Plataformas de torneos</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS ===== -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <span class="label reveal">proyectos</span>
+        <h2 class="h2 reveal">Trabajo <span class="accent">real</span>, en uso</h2>
+        <p class="lead reveal" style="margin-top:1.2rem;">Algunos de los proyectos que he diseñado y desarrollado de principio a fin.</p>
+
+        <div class="projects">
+
+          <!-- 01 KAXA -->
+          <article class="project reveal">
+            <div class="project__visual project__visual--kaxa">
+              <div class="kaxa" aria-hidden="true">
+                <div class="kaxa__top"><span class="kaxa__badge">K</span><b>Kaxa</b><em>Caja 01</em></div>
+                <div class="kaxa__main">
+                  <div class="kaxa__grid">
+                    <div class="kaxa__item"><i></i>Harina<span>$1.20</span></div>
+                    <div class="kaxa__item"><i></i>Arroz<span>$1.05</span></div>
+                    <div class="kaxa__item"><i></i>Café<span>$4.50</span></div>
+                    <div class="kaxa__item"><i></i>Aceite<span>$3.80</span></div>
+                    <div class="kaxa__item"><i></i>Leche<span>$1.90</span></div>
+                    <div class="kaxa__item"><i></i>Pasta<span>$0.95</span></div>
+                  </div>
+                  <div class="kaxa__ticket">
+                    <div class="kaxa__row"><span>2× Harina</span><span>2.40</span></div>
+                    <div class="kaxa__row"><span>1× Café</span><span>4.50</span></div>
+                    <div class="kaxa__row"><span>3× Pasta</span><span>2.85</span></div>
+                    <div class="kaxa__total"><span>Total</span><span>$9.75</span></div>
+                    <div class="kaxa__pay">Cobrar</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="n">01</span><span class="badge badge--live">● En producción</span></div>
+              <h3>Kaxa</h3>
+              <p class="project__type">Sistema de punto de venta (POS)</p>
+              <p class="project__desc">Software de punto de venta para comercios, que hoy funciona en un supermercado real. Se vende por licencias en distintos planes y se actualiza solo.</p>
+              <ul class="points">
+                <li>Versiones Básico, Medio y Avanzado, más una versión Lite para equipos con Windows 7</li>
+                <li>Actualizaciones automáticas para todos los clientes</li>
+                <li>Panel móvil para ver el negocio desde el celular</li>
+              </ul>
+              <div class="tags"><span>Tauri</span><span>React</span><span>TypeScript</span><span>Rust</span><span>Next.js</span><span>GitHub Actions</span></div>
+            </div>
+          </article>
+
+          <!-- 02 REARENA -->
+          <article class="project reveal">
+            <div class="project__visual shade">
+              <img class="cover cover--left" src="assets/img/rearena-llaves.webp" alt="Llaves de torneo en ReArena" loading="lazy">
+              <img class="overlay-logo" src="assets/img/rearena-logo.svg" alt="ReArena">
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="n">02</span><span class="badge badge--dev">● Próximo lanzamiento</span></div>
+              <h3>ReArena</h3>
+              <p class="project__type">Plataforma de torneos de esports</p>
+              <p class="project__desc">Plataforma completa para organizar torneos de VALORANT: inscripción de equipos, llaves de doble eliminación y gráficos en vivo para la transmisión. Diseñada primero para celular.</p>
+              <ul class="points">
+                <li>Cuentas, equipos, inscripciones y panel de administración</li>
+                <li>HUD en vivo y widgets para OBS</li>
+                <li>Bot de Discord integrado</li>
+              </ul>
+              <div class="tags"><span>Next.js</span><span>Supabase</span><span>Tailwind CSS</span><span>Vercel</span></div>
+            </div>
+          </article>
+
+          <!-- 03 DELIVERY -->
+          <article class="project reveal">
+            <div class="project__visual project__visual--delivery">
+              <div class="phone" aria-hidden="true">
+                <div class="phone__head"><img src="assets/img/dayexpress-logo.png" alt=""></div>
+                <div class="phone__rate">Tasa del día actualizada</div>
+                <div class="phone__list">
+                  <div class="phone__item"><i></i><div><b>Harina 1kg</b><span>$1.20</span></div><em>+</em></div>
+                  <div class="phone__item"><i></i><div><b>Café 500g</b><span>$4.50</span></div><em>+</em></div>
+                  <div class="phone__item"><i></i><div><b>Leche 1L</b><span>$1.90</span></div><em>+</em></div>
+                </div>
+                <div class="phone__cta">Ver pedido · 3 productos</div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="n">03</span><span class="badge">● Web app</span></div>
+              <h3>Day Express Delivery</h3>
+              <p class="project__type">App de pedidos para supermercado</p>
+              <p class="project__desc">App de delivery propia para un supermercado que también vende en tienda física. Los precios se calculan solos con la tasa del día y cada pedido se verifica antes de cobrar.</p>
+              <ul class="points">
+                <li>Catálogo en dólares que se recalcula con un solo número</li>
+                <li>Verificación de stock y comprobante de pago</li>
+                <li>Panel de pedidos para el personal de la tienda</li>
+              </ul>
+              <div class="tags"><span>Next.js</span><span>Prisma</span><span>Tailwind CSS</span></div>
+            </div>
+          </article>
+
+          <!-- 04 JS ACCESORIOS -->
+          <article class="project reveal">
+            <div class="project__visual project__visual--js">
+              <div class="js-collage">
+                <img class="p1" src="assets/img/js-prod-1.webp" alt="" loading="lazy">
+                <img class="p2" src="assets/img/js-prod-2.webp" alt="" loading="lazy">
+                <img class="p3" src="assets/img/js-prod-3.webp" alt="" loading="lazy">
+                <img class="lg" src="assets/img/js-logo.png" alt="Accesorios Johaysi Salazar">
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="n">04</span><span class="badge">● Tienda online</span></div>
+              <h3>Accesorios Johaysi Salazar</h3>
+              <p class="project__type">Catálogo con carrito y pedidos por WhatsApp</p>
+              <p class="project__desc">Tienda online para una marca de accesorios. Los clientes arman su carrito y el pedido llega listo al WhatsApp de la tienda, sin pasarelas complicadas.</p>
+              <ul class="points">
+                <li>Catálogo por categorías con carrito</li>
+                <li>Panel para que la dueña cargue y edite productos sola</li>
+                <li>Pedido enviado por WhatsApp con un clic</li>
+              </ul>
+              <div class="tags"><span>React</span><span>Vite</span><span>Tailwind CSS</span><span>Supabase</span></div>
+            </div>
+          </article>
+
+          <!-- 05 DELFIN -->
+          <article class="project reveal">
+            <div class="project__visual">
+              <img class="cover" src="assets/img/delfin.webp" alt="Sitio web de Delfin Productions" loading="lazy">
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="n">05</span><span class="badge badge--dev">● En desarrollo</span></div>
+              <h3>Delfin Productions</h3>
+              <p class="project__type">Sitio web para productora de eventos</p>
+              <p class="project__desc">Sitio para una empresa de entretenimiento para eventos, con secciones propias para sus productos estrella: un robot humanoide y una cabina de fotos, cada una con su identidad de marca.</p>
+              <ul class="points">
+                <li>Formularios de reserva y contacto directo por WhatsApp</li>
+                <li>Dos sub-marcas con su propio diseño</li>
+                <li>Página de «Muy pronto» hasta el lanzamiento</li>
+              </ul>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <!-- 06 MUNDOGG -->
+          <article class="project reveal">
+            <div class="project__visual project__visual--mgg">
+              <div class="mgg" aria-hidden="true">
+                <div class="mgg__top"><b>Panel MundoGG</b><span>Control</span><span class="mgg__live">● EN VIVO</span></div>
+                <div class="mgg__body">
+                  <div class="mgg__preview"><img src="assets/img/mundogg.webp" alt="" loading="lazy"><span>PROGRAMA</span></div>
+                  <div class="mgg__scenes">
+                    <div class="mgg__scene on">Podcast · 3 cám.</div>
+                    <div class="mgg__scene">Destacada</div>
+                    <div class="mgg__scene">Pantalla + cámaras</div>
+                    <div class="mgg__scene">Pantalla completa</div>
+                  </div>
+                </div>
+                <div class="mgg__cams">
+                  <div class="mgg__cam"><i></i>CAM 1</div><div class="mgg__cam"><i></i>CAM 2</div>
+                  <div class="mgg__cam"><i></i>CAM 3</div><div class="mgg__cam off"><i></i>CAM 4</div>
+                </div>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="n">06</span><span class="badge">● Streaming</span></div>
+              <h3>Panel MundoGG</h3>
+              <p class="project__type">Panel de producción en vivo para OBS</p>
+              <p class="project__desc">Panel de control para podcasts y entrevistas en vivo. Desde el navegador se cambian escenas, cámaras y gráficos, y todo se refleja al instante en la transmisión.</p>
+              <ul class="points">
+                <li>Escenas de 1 a 4 cámaras y pantalla compartida</li>
+                <li>Invitados remotos conectados desde su navegador</li>
+                <li>Una sola fuente en OBS, sincronizada en tiempo real</li>
+              </ul>
+              <div class="tags"><span>React</span><span>Firebase</span><span>VDO.Ninja</span><span>OBS</span></div>
+            </div>
+          </article>
+
+          <!-- 07 LA ÚLTIMA PREGUNTA -->
+          <article class="project reveal">
+            <div class="project__visual project__visual--lup">
+              <img class="lup-logo" src="assets/img/lup-logo.png" alt="La Última Pregunta">
+              <div class="lup-options" aria-hidden="true">
+                <span><b>A</b>Valorant</span><span class="ok"><b>B</b>Minecraft</span>
+                <span><b>C</b>Fortnite</span><span><b>D</b>Tetris</span>
+              </div>
+            </div>
+            <div class="project__body">
+              <div class="project__meta"><span class="n">07</span><span class="badge">● Streaming</span></div>
+              <h3>La Última Pregunta</h3>
+              <p class="project__type">Juego de preguntas en vivo</p>
+              <p class="project__desc">Un concurso de preguntas y respuestas para transmisiones en vivo, con temática de videojuegos. El presentador lo controla todo desde un panel y el público lo ve en el stream.</p>
+              <ul class="points">
+                <li>15 preguntas por partida con dificultad creciente</li>
+                <li>Comodines, animaciones y música</li>
+                <li>Panel de control con salida directa para OBS</li>
+              </ul>
+              <div class="tags"><span>React</span><span>Vite</span><span>Firebase</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESO ===== -->
+    <section class="section" id="proceso" style="background: var(--bg-2); border-block: 1px solid var(--line);">
+      <div class="container">
+        <span class="label reveal">proceso</span>
+        <h2 class="h2 reveal">Cómo trabajamos <span class="accent">juntos</span></h2>
+        <div class="steps">
+          <div class="step reveal"><span class="mono">01 — Conversamos</span><h3>Entiendo tu negocio</h3><p>Me cuentas qué necesitas y qué quieres lograr. Te propongo la mejor solución y un presupuesto claro.</p></div>
+          <div class="step reveal"><span class="mono">02 — Diseño</span><h3>Le damos forma</h3><p>Defino la estructura y el diseño con tu marca. Revisas y ajustamos antes de construir.</p></div>
+          <div class="step reveal"><span class="mono">03 — Desarrollo</span><h3>Lo construyo</h3><p>Te muestro avances en un enlace de prueba para que veas cómo va, sin sorpresas al final.</p></div>
+          <div class="step reveal"><span class="mono">04 — Lanzamiento</span><h3>Lo publicamos</h3><p>Lo pongo en línea con tu dominio y te acompaño después con ajustes y soporte.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section" id="sobre-mi">
+      <div class="container about">
+        <div>
+          <span class="label reveal">sobre mí</span>
+          <h2 class="h2 reveal">Hola, soy <span class="accent">Carlos</span>.</h2>
+          <!-- EDITAR: ajustar la presentación si quieres agregar algo personal -->
+          <p class="lead reveal" style="margin-top:1.4rem;">Soy desarrollador web y de software, y trabajo como Carloscode_. Me encargo del proyecto completo: diseño, desarrollo, publicación y soporte.</p>
+          <p class="lead reveal">Me gusta construir cosas que la gente usa de verdad: una tienda que recibe pedidos, una caja que cobra todo el día, un stream que se ve profesional.</p>
+          <div class="stack reveal">
+            <span>React</span><span>Next.js</span><span>TypeScript</span><span>JavaScript</span><span>Tailwind CSS</span>
+            <span>Supabase</span><span>Firebase</span><span>Tauri</span><span>Rust</span><span>Prisma</span>
+            <span>Vercel</span><span>GitHub Actions</span>
+          </div>
+        </div>
+        <div class="facts reveal">
+          <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20M12 2a15.3 15.3 0 0 0 0 20"/></svg><div><b>Clientes de cualquier país</b><span>Trabajo 100% remoto, por WhatsApp, correo o videollamada.</span></div></div>
+          <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg><div><b>De la idea al lanzamiento</b><span>Un solo responsable para el diseño, el código y la publicación.</span></div></div>
+          <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4v6h6M23 20v-6h-6"/><path d="M20.5 9A9 9 0 0 0 5.6 5.6L1 10m22 4-4.6 4.4A9 9 0 0 1 3.5 15"/></svg><div><b>Soporte después de entregar</b><span>Tu proyecto no queda abandonado: ajustes, mejoras y actualizaciones.</span></div></div>
+          <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg><div><b>Pensado para celular</b><span>Todo se ve y funciona bien en el teléfono de tus clientes.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section" id="contacto" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact reveal">
+          <span class="label">contacto</span>
+          <h2>¿Tienes un proyecto en mente?</h2>
+          <p class="lead">Cuéntame qué necesitas y te respondo con una propuesta. Sin compromiso.</p>
+          <div class="contact__actions">
+            <a href="#" class="btn btn--primary" data-whatsapp="Hola Carlos, vi tu portafolio y quiero cotizar un proyecto.">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+              Escríbeme por WhatsApp
+            </a>
+            <a href="#" class="btn btn--ghost" data-email>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              <span data-email-text>Correo</span>
+            </a>
+          </div>
+          <div class="contact__links">
+            <a href="#" data-instagram><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>Instagram</a>
+            <a href="#" data-github><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span data-year></span> Carlos Gómez · <span class="mono">carloscode_</span></span>
+      <span>Hecho con código propio, sin plantillas.</span>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float" data-whatsapp="Hola Carlos, vi tu portafolio y quiero cotizar un proyecto." aria-label="Escríbeme por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+  </a>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

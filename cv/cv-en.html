@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carlos Gómez — Full-stack Developer</title>
+  <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Carlos Eduardo Gómez Rodríguez</h1>
+    <div class="title">Full-stack Developer · React, Next.js, TypeScript · Real products in production</div>
+    <div class="contact">
+      <span>Barcelona, Venezuela (UTC−4) · Remote, any time zone</span>
+      <span><a href="mailto:info.carloscode@gmail.com">info.carloscode@gmail.com</a></span>
+      <span><a href="https://wa.me/584224552544">+58 422 455 2544</a></span>
+    </div>
+    <div class="contact">
+      <span><a href="https://www.linkedin.com/in/carlos-gomez-b41737421/">linkedin.com/in/carlos-gomez-b41737421</a></span>
+      <span><a href="https://github.com/infocarloscode-cmd">github.com/infocarloscode-cmd</a></span>
+    </div>
+  </header>
+
+  <h2>Summary</h2>
+  <p class="summary">
+    Full-stack developer who ships complete products and keeps them running. I designed, built and maintain
+    a desktop point-of-sale system (Tauri, Rust, React) used every day by two retail businesses, plus the delivery
+    web app connected to it. I own the whole cycle: data model, backend, UI, CI/CD, releases and support for
+    real users. I use AI coding tools daily to move fast, and I back that speed with tests, code review and
+    careful releases.
+  </p>
+
+  <h2>Experience</h2>
+  <div class="job-head"><b>Founder &amp; Full-stack Developer — Carloscode_</b><em>Mar 2026 – Present</em></div>
+  <div class="job-sub">Independent software studio · Remote · Clients in Venezuela</div>
+
+  <div class="proj">
+    <div class="proj-head">Kaxa — Desktop point-of-sale system <span>· Tauri 2, Rust, React, TypeScript, libSQL/Turso, GitHub Actions</span></div>
+    <ul>
+      <li>Built a full POS from scratch: sales, inventory, purchases and supplier invoices, credit notes, cash closing, reports, users and roles.</li>
+      <li>In daily production since Jul 2026 at 2 retail stores (supermarket and minimarket) on 6 connected devices. Both clients came by referral.</li>
+      <li>Offline-first: works without internet and syncs to the cloud database. 40 versioned schema migrations, Rust unit tests on critical flows (stock, credit notes).</li>
+      <li>Release pipeline on GitHub Actions: builds 32/64-bit installers, signs them and publishes releases. Registers update themselves.</li>
+      <li>Shipped 4 licensed editions from one codebase, plus <i>Kaxa Lite</i>, a native Rust build that runs on old Windows 7 32-bit hardware.</li>
+      <li>Fixed a production data bug (foreign-key failure in credit notes): reproduced it with tests first, then fixed and released it to every edition.</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="proj-head">Day Express Delivery — Online grocery ordering <span>· Next.js, Prisma, PostgreSQL, Upstash Redis</span></div>
+    <ul>
+      <li>Customer storefront and staff panel. About 25 orders a week and 72 registered customers.</li>
+      <li>Integrated with the store's Kaxa register: online orders sync into the POS through a dedicated API.</li>
+      <li>Prices kept in USD and recalculated from the daily exchange rate. Stock check before payment, upload and approval of payment receipts, live chat.</li>
+      <li>Security: HMAC-SHA256 signed session cookies with expiry for staff and customers. When the app hit Vercel's usage limits, I moved it to Render and reduced database queries.</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="proj-head">ReArena — Esports tournament platform (co-founder, lead developer) <span>· Next.js 16, React 19, Supabase, Tailwind</span></div>
+    <ul>
+      <li>Mobile-first platform for VALORANT tournaments: accounts, teams, registration, double-elimination brackets, Discord integration.</li>
+      <li>Admin panel with approvals, audit log, backups and soft delete. 250+ commits and 50 test files (Node test runner).</li>
+      <li>Live broadcast HUD for OBS that reads the in-game scoreboard with OCR (Tesseract.js). First public tournament: Nov 2026.</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="proj-head">Other client work <span>· React, Vite, Supabase, Firebase</span></div>
+    <ul>
+      <li>E-commerce catalog with cart, WhatsApp checkout and an admin panel the owner uses on her own.</li>
+      <li>Live-streaming tools: an OBS production panel with remote guests, and a real-time trivia game show for streams.</li>
+    </ul>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <b>Languages</b><span>TypeScript, JavaScript, Rust, SQL, HTML, CSS</span>
+    <b>Frontend</b><span>React, Next.js (App Router, Server Components), Tailwind CSS, Vite</span>
+    <b>Backend &amp; data</b><span>Node.js, REST APIs, Prisma, PostgreSQL, SQLite/libSQL (Turso), Supabase, Firebase, Redis</span>
+    <b>Desktop</b><span>Tauri 2 (Rust + web UI), auto-updates, Windows installers (NSIS)</span>
+    <b>DevOps &amp; tools</b><span>Git, GitHub Actions, Vercel, Render, Cloudflare Pages, AI-assisted development (Claude Code)</span>
+  </div>
+
+  <div class="two">
+    <div>
+      <h2>Education</h2>
+      <b>Full Stack Software Development</b> (320 h) — 4Geeks Academy, Caracas · Oct 2022<br>
+      <a class="muted" href="https://certificate.4geeks.com/3cb672dc45f5f5dfc214f0bdd6e7f0e6a074d060">Verify certificate</a>
+    </div>
+    <div>
+      <h2>Languages</h2>
+      Spanish — native<br>
+      English — intermediate (strong reading and writing)
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
