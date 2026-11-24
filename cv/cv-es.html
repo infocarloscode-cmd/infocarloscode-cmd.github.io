@@ -8,7 +8,8 @@
 <body>
 <div class="page">
 
-  <header>
+  <header class="con-foto">
+    <img class="foto" src="../assets/img/carlos.jpg" alt="Carlos Gómez">
     <h1>Carlos Eduardo Gómez Rodríguez</h1>
     <div class="title">Desarrollador Full-stack · React, Next.js, TypeScript · Productos reales en producción</div>
     <div class="contact">
@@ -28,8 +29,7 @@
     Desarrollador full-stack que entrega productos completos y los mantiene funcionando. Diseñé, construí y mantengo
     un sistema de punto de venta de escritorio (Tauri, Rust, React) que usan a diario dos comercios, y la app de delivery
     conectada a él. Me encargo de todo el ciclo: modelo de datos, backend, interfaz, CI/CD, publicación de versiones y
-    soporte a usuarios reales. Uso herramientas de IA a diario para avanzar rápido, y respaldo esa velocidad con tests,
-    revisión de código y publicaciones cuidadosas.
+    soporte a usuarios reales. Uso herramientas de IA a diario para avanzar rápido, y respaldo esa velocidad con tests y publicaciones cuidadosas.
   </p>
 
   <h2>Experiencia</h2>
@@ -40,10 +40,10 @@
     <div class="proj-head">Kaxa — Sistema de punto de venta de escritorio <span>· Tauri 2, Rust, React, TypeScript, libSQL/Turso, GitHub Actions</span></div>
     <ul>
       <li>POS completo hecho desde cero: ventas, inventario, compras y facturas de proveedores, notas de crédito, cuadre de caja, reportes, usuarios y roles.</li>
-      <li>En producción diaria desde julio de 2026 en 2 comercios (supermercado y minimarket), con 6 dispositivos conectados. Ambos clientes llegaron por recomendación.</li>
-      <li>Funciona sin internet y sincroniza con la base de datos en la nube. 40 migraciones versionadas y tests en Rust de los flujos críticos (stock, notas de crédito).</li>
+      <li>En producción diaria en Day Express (supermercado) desde julio de 2026 y ahora en un segundo comercio: 6 dispositivos en total. Ambos clientes llegaron por recomendación.</li>
+      <li>Funciona sin internet y sincroniza con la base de datos en la nube. 40 migraciones versionadas y tests en Rust de flujos como las notas de crédito.</li>
       <li>Publicación automática con GitHub Actions: compila instaladores de 32 y 64 bits, los firma y publica la versión. Las cajas se actualizan solas.</li>
-      <li>4 ediciones con licencia a partir de un mismo código, más <i>Kaxa Lite</i>, una versión nativa en Rust que corre en equipos viejos con Windows 7 de 32 bits.</li>
+      <li>Mantengo 4 ediciones y llevo los arreglos de una a otra, más <i>Kaxa Lite</i>, una versión nativa en Rust que corre en equipos viejos con Windows 7 de 32 bits.</li>
       <li>Corregí un error de datos en producción (falla de clave foránea en notas de crédito): primero lo reproduje con tests, luego lo arreglé y lo publiqué en todas las ediciones.</li>
     </ul>
   </div>
@@ -63,7 +63,7 @@
     <ul>
       <li>Plataforma pensada para celular para torneos de VALORANT: cuentas, equipos, inscripciones, llaves de doble eliminación e integración con Discord.</li>
       <li>Panel de administración con aprobaciones, auditoría, respaldos y papelera. Más de 250 commits y 50 archivos de tests (Node test runner).</li>
-      <li>HUD en vivo para OBS que lee el marcador del juego con OCR (Tesseract.js). Primer torneo público: noviembre de 2026.</li>
+      <li>HUD en vivo para OBS que lee el marcador desde la pantalla (comparación con plantillas y OCR Tesseract). Primer torneo público: noviembre de 2026.</li>
     </ul>
   </div>
 

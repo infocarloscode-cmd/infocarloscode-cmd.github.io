@@ -1,4 +1,4 @@
-﻿/* Estilos del CV (una página A4). Se usa para la versión en inglés y en español. */
+/* Estilos del CV (una página A4). Se usa para la versión en inglés y en español. */
 @page { size: A4; margin: 0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -42,3 +42,6 @@ li::marker { color: #3b3bd1; }
 .muted { color: #555; }
 
 .contact + .contact { margin-top: 0.6mm; }
+
+header.con-foto { display: flow-root; }
+.foto { float: right; width: 22mm; height: 22mm; border-radius: 50%; object-fit: cover; }
